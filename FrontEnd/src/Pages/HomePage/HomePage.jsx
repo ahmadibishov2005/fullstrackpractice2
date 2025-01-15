@@ -3,11 +3,15 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
-import { FaCircle } from "react-icons/fa";
+import { MdPieChart } from "react-icons/md";
+import {Helmet} from 'react-helmet'
 
 function HomePage() {
     return (
         <div>
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
             <div className='shop'>
                 <img src="" alt="" />
                 <div className='shop-texts'>
@@ -19,7 +23,13 @@ function HomePage() {
                     </div>
                 </div>
             </div>
-            <div className='products'></div>
+            <div className='products'>
+                <div className='products-text'>
+                <h3 style={{color: "gray"}}>Popular Products</h3>
+                <h1>Our Products</h1>
+                <p style={{color: "gray"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.</p>
+                </div>
+            </div>
             <div className='about'>
                 <div className='about-img'>
                     <img src="https://preview.colorlib.com/theme/selling/images/about_1.jpg.webp" alt="" />
@@ -77,20 +87,94 @@ function HomePage() {
                 </div>
                 <div className='services'>
                     <div className='service-text'>
-                        <p style={{color: "gray"}}>OUR SERVICES</p>
+                        <p style={{ color: "gray" }}>OUR SERVICES</p>
                         <h1>We Offer Services</h1>
                     </div>
                     <div className='service-stuff'>
                         <div className='s-card'>
                             <div className='s-icon'>
-                            <FaCircle />
+                                <MdPieChart />
                             </div>
-                            <div className='s-text'><h3></h3>
-                                <p></p>
-                                <li><a href=""></a></li>
-                                </div>
+                            <div className='s-text'>
+                                <h3 style={{ color: "gray" }}>Business Consulting</h3>
+                                <p style={{ color: "gray" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                                <li> <a href="">Learn More</a></li>
+                            </div>
+                        </div>
+                        <div className='s-card'>
+                            <div className='s-icon'>
+                                <MdPieChart />
+                            </div>
+                            <div className='s-text'>
+                                <h3 style={{ color: "gray" }}>Business Consulting</h3>
+                                <p style={{ color: "gray" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                                <li> <a href="">Learn More</a></li>
+                            </div>
+                        </div>
+                        <div className='s-card'>
+                            <div className='s-icon'>
+                                <MdPieChart />
+                            </div>
+                            <div className='s-text'>
+                                <h3 style={{ color: "gray" }}>Business Consulting</h3>
+                                <p style={{ color: "gray" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                                <li> <a href="">Learn More</a></li>
+                            </div>
+                        </div>
+                        <div className='s-card'>
+                            <div className='s-icon'>
+                                <MdPieChart />
+                            </div>
+                            <div className='s-text'>
+                                <h3 style={{ color: "gray" }}>Business Consulting</h3>
+                                <p style={{ color: "gray" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                                <li> <a href="">Learn More</a></li>
+                            </div>
+                        </div>
+                        <div className='s-card'>
+                            <div className='s-icon'>
+                                <MdPieChart />
+                            </div>
+                            <div className='s-text'>
+                                <h3 style={{ color: "gray" }}>Business Consulting</h3>
+                                <p style={{ color: "gray" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                                <li> <a href="">Learn More</a></li>
+                            </div>
+                        </div>
+                        <div className='s-card'>
+                            <div className='s-icon'>
+                                <MdPieChart />
+                            </div>
+                            <div className='s-text'>
+                                <h3 style={{ color: "gray" }}>Business Consulting</h3>
+                                <p style={{ color: "gray" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                                <li> <a href="">Learn More</a></li>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className='last'>
+                <div className='l-card-one'><h2>About Us</h2><p style={{ color: "gray" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p></div>
+                <div className='l-card-two'><h2>Quick Links</h2>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </div>
+                <div className='l-card-three'><h2>Follow Us</h2>
+                    <div className='l-card-three-icons'>
+                        <FaFacebook />
+                        <FaTwitter />
+                        <FaLinkedin />
+                        <FaInstagram />
+                    </div>
+                </div>
+                <div className='l-card-four'><h2>Featured Product</h2>
+                    <img src="https://preview.colorlib.com/theme/selling/images/product_1_bg.jpg" width="100%" />
+                    <h2>Leather Brown Shoe</h2>
+                    <p>$60.00</p>
+                    <button className='last-btn'>ADD TO CARD</button>
                 </div>
             </div>
         </div>

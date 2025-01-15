@@ -142,3 +142,89 @@ body{
   display: flex;
   justify-content: space-evenly;
 }
+.s-card{
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  
+}
+.s-icon{
+  padding-top: 30px;
+  font-size: 30px;
+  color: rgb(216, 145, 13);
+}
+.s-text a{
+  text-decoration: none;
+  color: orange;
+}
+.s-text{
+  list-style-type: none;
+}
+.service-stuff{
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  width: 60%;
+}
+.service-text{
+  text-align: center;
+  margin-top: 100px;
+}
+.l-card-one{
+  width: 15%;
+}
+.l-card-two{
+  width: 15%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.l-card-two :hover{
+  color: black;
+}
+.l-card-two a{
+  text-decoration: none;
+  color: rgb(114, 102, 102);
+  
+}
+.l-card-three{
+  width: 15%;
+  
+}
+.l-card-three-icons{
+  display: flex;
+  gap: 20px;
+  color: rgb(160, 151, 151);
+}
+.l-card-three-icons :hover{
+  color: black;
+}
+.l-card-four{
+  width: 15%;
+}
+.last{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.last-btn{
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+}
+.last-btn:hover{
+  color: black;
+  background-color: white;
+  
+}
+.products-text{
+ margin: 0 auto;
+ text-align: center;
+  width: 25%;
+}
+
+
